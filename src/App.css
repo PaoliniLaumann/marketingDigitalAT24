@@ -14,10 +14,10 @@
 }
 
 .App-header {
-  background-image: url("https://baja.website/wp-content/uploads/2021/03/marketing-digital.jpg");
+  background-image: url("../public/Inicio.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 400vh;
   display: flex;
   flex-direction: column;    
 }
