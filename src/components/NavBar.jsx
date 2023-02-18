@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
+
 
 const pages = ["Inicio", "Conócenos", "Servicios"];
 
@@ -36,8 +36,7 @@ function NavBar() {
       
     >
       <Container maxWidth="xxl">
-        <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+        <Toolbar disableGutters>         
           <Typography
             variant="h4"
             noWrap
@@ -92,8 +91,7 @@ function NavBar() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          </Box>          
           <Typography
             variant="h5"
             noWrap
