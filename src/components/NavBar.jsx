@@ -10,7 +10,6 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-
 const pages = ["Inicio", "Conócenos", "Servicios"];
 
 function NavBar() {
@@ -30,30 +29,23 @@ function NavBar() {
       style={{
         justifyContent: "center",
         backgroundColor: "transparent",
-        textDecoration: "none", 
-        boxShadow:"none"           
+        textDecoration: "none",
+        boxShadow: "none",
       }}
-      
     >
       <Container maxWidth="xxl">
-        <Toolbar disableGutters>         
-          <Typography
-            variant="h4"
-            noWrap
-            component="a"
-            href="/"
+        <Toolbar disableGutters>
+          <Box
+            component="img"
             sx={{
-              mr: "10rem",
+              height: 100,
+              width: 250,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "black",
-              textDecoration: "none",
+              marginRight: 8,
             }}
-          >
-            LOGO
-          </Typography>
+            alt="logo"
+            src="https://i.ibb.co/FgCfVZ5/LOGO02.png"
+          ></Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -87,41 +79,47 @@ function NavBar() {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
-                  
                 </MenuItem>
               ))}
             </Menu>
-          </Box>          
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
+          </Box>
+          <Box
+            component="img"
             sx={{
-              mr: 2,
+              height: 60,
+              width: 120,
               display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "black",
-              textDecoration: "none",
             }}
-          >
-            LOGO
-          </Typography>
+            alt="logo"
+            src="https://i.ibb.co/FgCfVZ5/LOGO02.png"
+          ></Box>
+
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, mr:9, color: "GrayText" , letterSpacing: ".1rem", fontSize:"1rem" }}
+                sx={{
+                  my: 2,
+                  mr: 9,
+                  color: "GrayText",
+                  letterSpacing: ".1rem",
+                  fontSize: "1rem",
+                }}
               >
                 {page}
               </Button>
             ))}
           </Box>
-          <Box sx={{ ml: "1rem",color: "GrayText" , letterSpacing: ".1rem", fontSize:"1rem"  }}>
+          <Box
+            sx={{
+              ml: "1rem",
+              color: "GrayText",
+              letterSpacing: ".1rem",
+              fontSize: "1rem",
+              display: { xs: "none", md: "flex" },
+            }}
+          >
             <p>Contacto</p>
           </Box>
         </Toolbar>
