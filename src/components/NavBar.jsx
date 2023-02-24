@@ -7,10 +7,14 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-router-dom";
 
-const pages = ["Inicio", "Conócenos", "Servicios"];
+const pages = [
+  { enlace: "/", nombre: "Inicio" },
+  { enlace: "/Conocenos", nombre: "Conocenos" },
+  { enlace: "/Servicios", nombre: "Servicios" },
+];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,31 +29,31 @@ function NavBar() {
 
   return (
     <AppBar
-    className="positioned"
+      className="positioned"
       position="relative"
       style={{
         justifyContent: "center",
         backgroundColor: "transparent",
         textDecoration: "none",
         boxShadow: "none",
-        display:"inline-block"
       }}
     >
       <Container maxWidth="xxl">
         <Toolbar disableGutters>
-          <Box
-            component="img"
-            sx={{
-              height: 80,
-              width: 200,
-              display: { xs: "none", md: "flex" },
-              marginRight: 8,
-              marginLeft:5
-            }}
-            alt="logo"
-            src="https://i.ibb.co/FgCfVZ5/LOGO02.png"
-          ></Box>
-
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Box
+              component="img"
+              sx={{
+                height: 80,
+                width: 200,
+                display: { xs: "none", md: "flex" },
+                marginRight: 5,
+                marginLeft: 4,
+              }}
+              alt="logo"
+              src="https://i.ibb.co/FgCfVZ5/LOGO02.png"
+            ></Box>
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -79,52 +83,57 @@ function NavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map((page, index) => (
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
+                  <Link
+                    to={page.enlace}
+                    style={{ textDecoration: "none", color: `black` }}
+                  >
+                    {page.nombre}{" "}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <Box
-            component="img"
-            sx={{
-              height: 60,
-              width: 120,
-              display: { xs: "flex", md: "none" },
-            }}
-            alt="logo"
-            src="https://i.ibb.co/FgCfVZ5/LOGO02.png"
-          ></Box>
-
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Box
+              component="img"
+              sx={{
+                height: 60,
+                width: 120,
+                display: { xs: "flex", md: "none" },
+              }}
+              alt="logo"
+              src="https://i.ibb.co/FgCfVZ5/LOGO02.png"
+            ></Box>
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  mr: 8,
-                  color: "GrayText",
-                  letterSpacing: ".1rem",
-                  fontSize: "1rem",
-                }}
-              >
-                {page}
-              </Button>
+            {pages.map((page, index) => (
+              <MenuItem key={index} onClick={handleCloseNavMenu}>
+                <Link
+                  to={page.enlace}
+                  style={{ textDecoration: "none", color: `black` }}
+                >
+                  {page.nombre}{" "}
+                </Link>
+              </MenuItem>
             ))}
           </Box>
-          <Box
-            sx={{
-             
-              color: "GrayText",
-              letterSpacing: ".1rem",
-              fontSize: "1rem",
-              display: { xs: "none", md: "flex" },
-            }}
-          >
-            <p>Contacto</p>
-          </Box>
+          <Link to="/Contacto" style={{ textDecoration: "none" }}>
+            <Typography
+              variant="h6"
+              noWrap
+              sx={{
+                display: { xs: "none", md: "flex" },
+                fontFamily: "BlinkMacSystemFont",
+                fontWeight: 100,
+                letterSpacing: ".3rem",
+                color: "black",
+              }}
+            >
+              Contacto
+            </Typography>
+          </Link>
         </Toolbar>
       </Container>
     </AppBar>

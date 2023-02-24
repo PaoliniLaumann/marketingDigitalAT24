@@ -1,12 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Conocenos() {
-    
-  return (
-    <header className="desktopConocenos">
-
-    </header>
-  )
+  return <header className="desktopConocenos fondo fondo1 fondo2"></header>;
 }
 
-export default Conocenos
+export default Conocenos;
