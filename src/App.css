@@ -1,27 +1,77 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.positioned {
+  top: 100px;
+    
+}
+
 .App {
   text-align: center;
 }
 
 @media (max-width: 1980px) {
-  
-  .desktop {
-    background-image: url("../public/Inicio.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400vh;  
-  display: flex;
-  flex-direction: column;
-  }     
-}
 
-@media (max-width: 500px) {
-  .fondo {
-    background-image: url(../public/Mobile\ fondo\ unico.png);
+  .desktophome {
+    background-image: url("../public/Inicio.png");
     background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 200vh;  
-  display: flex;
-  flex-direction: column;
+    background-size: cover;
+    min-height: 400vh;
+    display: flex;
+    flex-direction: column;
   }
 }
 
+@media (max-width: 1980px) {
+.desktopConocenos {
+  background-image: url("../public/Conocenos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width:  100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+}
+
+
+@media (max-width: 1280px) {
+  .fondo1 {
+    background-image: url("../public/Inicio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 180vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+@media (max-width: 900px) {
+  .fondo2 {
+    background-image: url("../public/Inicio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 170vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+  .fondo {
+    background-image: url(../public/Mobile\ fondo\ unico.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}

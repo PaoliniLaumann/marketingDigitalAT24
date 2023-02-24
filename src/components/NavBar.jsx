@@ -25,12 +25,14 @@ function NavBar() {
 
   return (
     <AppBar
-      position="static"
+    className="positioned"
+      position="relative"
       style={{
         justifyContent: "center",
         backgroundColor: "transparent",
         textDecoration: "none",
         boxShadow: "none",
+        display:"inline-block"
       }}
     >
       <Container maxWidth="xxl">
@@ -38,10 +40,11 @@ function NavBar() {
           <Box
             component="img"
             sx={{
-              height: 100,
-              width: 250,
+              height: 80,
+              width: 200,
               display: { xs: "none", md: "flex" },
               marginRight: 8,
+              marginLeft:5
             }}
             alt="logo"
             src="https://i.ibb.co/FgCfVZ5/LOGO02.png"
@@ -101,7 +104,7 @@ function NavBar() {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  mr: 9,
+                  mr: 8,
                   color: "GrayText",
                   letterSpacing: ".1rem",
                   fontSize: "1rem",
@@ -113,7 +116,7 @@ function NavBar() {
           </Box>
           <Box
             sx={{
-              ml: "1rem",
+             
               color: "GrayText",
               letterSpacing: ".1rem",
               fontSize: "1rem",
