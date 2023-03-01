@@ -51,7 +51,7 @@ function NavBar() {
                 marginLeft: 4,
               }}
               alt="logo"
-              src="https://i.ibb.co/FgCfVZ5/LOGO02.png"
+              src="./logos/LOGO02.png"
             ></Box>
           </Link>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -88,6 +88,7 @@ function NavBar() {
                   <Link
                     to={page.enlace}
                     style={{ textDecoration: "none", color: `black` }}
+                    sx={{}}
                   >
                     {page.nombre}{" "}
                   </Link>
@@ -104,7 +105,7 @@ function NavBar() {
                 display: { xs: "flex", md: "none" },
               }}
               alt="logo"
-              src="https://i.ibb.co/FgCfVZ5/LOGO02.png"
+              src="./logos/LOGO02.png"
             ></Box>
           </Link>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
@@ -114,7 +115,19 @@ function NavBar() {
                   to={page.enlace}
                   style={{ textDecoration: "none", color: `black` }}
                 >
-                  {page.nombre}{" "}
+                  <Typography
+                    variant="h6"
+                    noWrap
+                    sx={{
+                      display: { xs: "none", md: "flex" },
+                      fontFamily: "Montserrat",
+                      fontWeight: 400,
+                      letterSpacing: ".1rem",
+                      color: "black",
+                    }}
+                  >
+                    {page.nombre}{" "}
+                  </Typography>
                 </Link>
               </MenuItem>
             ))}
@@ -125,9 +138,9 @@ function NavBar() {
               noWrap
               sx={{
                 display: { xs: "none", md: "flex" },
-                fontFamily: "BlinkMacSystemFont",
-                fontWeight: 100,
-                letterSpacing: ".3rem",
+                fontFamily: "Montserrat",
+                fontWeight: 400,
+                letterSpacing: ".1rem",
                 color: "black",
               }}
             >

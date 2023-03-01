@@ -12,6 +12,9 @@
   text-align: center;
 }
 
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+}
 @media (max-width: 1980px) {
 
   .desktophome {
@@ -29,7 +32,7 @@
     background-image: url("../public/Conocenos.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 101vh;
     display: flex;
     flex-direction: column;
   }
@@ -40,7 +43,7 @@
     background-image: url("../public/Servicios\ lista.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 101vh;
     display: flex;
     flex-direction: column;
   }
@@ -63,7 +66,7 @@
     background-image: url("../public/Contacto.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 101vh;
     display: flex;
     flex-direction: column;
   }

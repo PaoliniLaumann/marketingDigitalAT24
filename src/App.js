@@ -5,8 +5,10 @@ import Home from "./components/Home";
 import Conocenos from "./components/Conocenos";
 import Servicios from "./components/Servicios";
 import Contacto from "./components/Contacto";
+/* import Footer from "./components/Footer"; */
 
 function App() {
+
   return (
     <>
       <BrowserRouter>
@@ -17,6 +19,7 @@ function App() {
             <Route path="/Servicios" element={<Servicios/>}/>
             <Route path="/Contacto" element={<Contacto/>}/>
           </Routes>
+         
         </BrowserRouter>
     </>
   );
