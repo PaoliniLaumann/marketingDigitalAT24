@@ -14,7 +14,7 @@
     background-image: url("../public/Inicio.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 400vh;
+    min-height: 360vh;
     display: flex;
     flex-direction: column;
   }
@@ -36,7 +36,7 @@
     background-image: url("../public/Servicios\ lista.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 100vh;    
     display: flex;
     flex-direction: column;
   }
