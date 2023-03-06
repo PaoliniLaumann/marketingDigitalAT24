@@ -3,21 +3,14 @@
   padding: 0%;
 }
 
-.positioned {
-  top: 100px;
-
-}
-
-.App {
-  text-align: center;
-}
 
 .titulo {
   font-family: 'Montserrat', sans-serif;
 }
+
 @media (max-width: 1980px) {
 
-  .desktophome {
+  .Home {
     background-image: url("../public/Inicio.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,22 +21,22 @@
 }
 
 @media (max-width: 1980px) {
-  .desktopConocenos {
+  .Conocenos {
     background-image: url("../public/Conocenos.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 101vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
 }
 
 @media (max-width: 1980px) {
-  .desktopServicios {
+  .Servicios {
     background-image: url("../public/Servicios\ lista.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 101vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
@@ -62,18 +55,18 @@
 
 @media (max-width: 1980px) {
 
-  .desktopContacto {
+  .Contacto {
     background-image: url("../public/Contacto.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 101vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
 }
 
 @media (max-width: 900px) {
-  .fondo2 {
+  .Home {
     background-image: url("../public/Inicio.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,7 +77,11 @@
 }
 
 @media (max-width: 600px) {
-  .fondo {
+
+  .Home,
+  .Conocenos,
+  .Servicios,
+  .Contacto {
     background-image: url(../public/Mobile\ fondo\ unico.png);
     background-repeat: no-repeat;
     background-size: cover;

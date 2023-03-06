@@ -5,22 +5,34 @@ import Home from "./components/Home";
 import Conocenos from "./components/Conocenos";
 import Servicios from "./components/Servicios";
 import Contacto from "./components/Contacto";
-/* import Footer from "./components/Footer"; */
+import Footer from "./components/Footer";
+import { useState } from "react";
 
 function App() {
+  const [data, setData] = useState("");
+
+  const handleDataChange = (newData) => {
+    setData(newData.slice(1));
+  };
 
   return (
     <>
       <BrowserRouter>
+        <div className={`App ${data === "" ? "Home" : data}`}>
           <NavBar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Conocenos" element={<Conocenos/>}/>
-            <Route path="/Servicios" element={<Servicios/>}/>
-            <Route path="/Contacto" element={<Contacto/>}/>
+            <Route
+              path="/"
+              element={<Home onDataChanged={handleDataChange} />}
+            />
+            <Route path="/Conocenos" element={<Conocenos onDataChanged={handleDataChange}/>} />
+            <Route path="/Servicios" element={<Servicios onDataChanged={handleDataChange}/>} />
+            <Route path="/Contacto" element={<Contacto onDataChanged={handleDataChange} />} />
           </Routes>
-         
-        </BrowserRouter>
+           <Footer />
+        </div>
+        
+      </BrowserRouter>
     </>
   );
 }

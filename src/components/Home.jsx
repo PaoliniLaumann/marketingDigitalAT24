@@ -1,7 +1,15 @@
 import React from "react";
+import { useLocation } from 'react-router-dom';
+import  { useEffect } from 'react'
 
-function Home() {
-  return <header className="desktophome fondo fondo1 fondo2 "></header>;
+function Home({ onDataChanged }) {
+  const location = useLocation()
+
+  
+  useEffect(() => {
+    onDataChanged(location.pathname);
+  })
+  return <header ></header>;
 }
 
 export default Home;

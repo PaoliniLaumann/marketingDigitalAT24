@@ -28,14 +28,14 @@ function NavBar() {
   };
 
   return (
-    <AppBar
-      className="positioned"
+    <AppBar      
       position="relative"
       style={{
         justifyContent: "center",
         backgroundColor: "transparent",
         textDecoration: "none",
         boxShadow: "none",
+       /*  margin: "2px" */
       }}
     >
       <Container maxWidth="xxl">

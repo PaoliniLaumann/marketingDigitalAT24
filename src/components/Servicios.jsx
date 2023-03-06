@@ -1,10 +1,23 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
-function Servicios() {
+
+
+
+function Servicios({ onDataChanged }) {
+  const location = useLocation();
+
+  useEffect(() => {
+    onDataChanged(location.pathname);
+  });
+  
+
   return (
-    <div>
-      <header className="desktopServicios fondo fondo1 fondo2"></header>
-    </div>
+    <header>
+
+    </header>
+    
   );
 }
 

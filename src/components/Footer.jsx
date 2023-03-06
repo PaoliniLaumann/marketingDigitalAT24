@@ -1,33 +1,25 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Grid, IconButton } from "@mui/material";
+import { Link } from "@mui/material";
+import { Facebook, Instagram } from "@mui/icons-material";
 
 export const Footer = () => {
-    return (
-      <Box
-        sx={{
-          width: "100%",
-          height: "auto",
-          backgroundColor: "secondary.main",
-          paddingTop: "1rem",
-          paddingBottom: "1rem",
-        }}
-      >
-        <Container maxWidth="lg">
-          <Grid container direction="column" alignItems="center">
-            <Grid item xs={12}>
-              <Typography color="black" variant="h5">
-                React Starter App
-              </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Typography color="textSecondary" variant="subtitle1">
-                {`${new Date().getFullYear()} | React | Material UI | React Router`}
-              </Typography>
-            </Grid>
-          </Grid>
-        </Container>
-      </Box>
-    );
-  };
-  
-  export default Footer;
+  return (
+    <Grid container sx={{ justifyContent: "space-between", marginTop: 6 }}>
+      <Grid item xs={4} style={{ textAlign: "center" }}>
+        <Link>Politica de privacidad</Link> | <Link>Terminos de uso</Link> |{" "}
+        <Link>Politicas de contenido</Link>
+      </Grid>
+      <Grid item xs={1}>
+        <IconButton>
+          <Facebook />
+        </IconButton>
+        <IconButton>
+          <Instagram />
+        </IconButton>
+      </Grid>
+    </Grid>
+  );
+};
+
+export default Footer;
