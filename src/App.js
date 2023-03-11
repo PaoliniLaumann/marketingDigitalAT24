@@ -8,6 +8,7 @@ import Contacto from "./components/Contacto";
 import Footer from "./components/Footer";
 import { useState } from "react";
 
+
 function App() {
   const [data, setData] = useState("");
 
@@ -29,7 +30,8 @@ function App() {
             <Route path="/Servicios" element={<Servicios onDataChanged={handleDataChange}/>} />
             <Route path="/Contacto" element={<Contacto onDataChanged={handleDataChange} />} />
           </Routes>
-           <Footer />
+
+          <Footer />
         </div>
         
       </BrowserRouter>

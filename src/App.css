@@ -90,3 +90,242 @@
     flex-direction: column;
   }
 }
+
+
+
+.contenedor{
+  margin-top: 130px;
+  margin-left: 90px;
+}
+
+.tituloHome{
+  color: #00554E;
+  margin-bottom: 70px;
+}
+.p1Home{
+  padding-top: 20px;
+  text-align: left;
+  padding: 0 400px 0px 0px;
+}
+
+.p2Home{
+  padding-top: 50px;
+  text-align: left;
+}
+
+.p3Home{
+  font-weight: bold;
+}
+
+.boton button{
+  margin-left: 90px;
+  margin-top: 90px;
+  background-color: #00554E;
+  color: white;
+  border-radius: 20px;
+}
+.link{
+  color: white;
+}
+
+.boton button:hover{
+  background-color: #00554E;
+}
+
+
+.marcasLogo{
+  margin: 50px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.marcasLogo img{
+  width: 150px;
+  padding: 50px;
+}
+
+.gridContenedor{
+  margin-top: 200px;
+  background-color: #00554E;
+}
+
+.grid1{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 10px;
+  color: white;
+}
+
+.item{
+  display: flex;
+  justify-content: center;
+}
+
+
+.carousel {
+  overflow: hidden;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 200px;
+  
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0.5px 0px grey; 
+  
+}
+
+.carousel-item-text {
+  font-size: 1.15rem;
+  padding: 0 40px 0 40px;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.carousel-item-title {
+  padding: 0 100px 0 100px;
+}
+
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  color: #00554E;
+  
+}
+
+.button-arrow {
+  background: none;
+  border: none;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.indicator-buttons {
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.indicators > button {
+  margin: 5px;
+  background: none;
+}
+
+.indicator-symbol {
+  color: #c4d5d4;
+  background-color: #c4d5d4;
+  border-radius: 100px;
+}
+
+.indicator-symbol-active {
+  color: #00554E;
+  background-color: #00554E;
+  border-radius: 20px;
+}
+
+
+.newsletter{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.newsletter h1{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.newsletter h5{
+  padding-bottom:  50px;
+}
+
+
+.new-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.new-email input{
+  padding: 10px;
+  padding-right: 110px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 1px 20px 1px grey;
+
+}
+
+.new-email button {
+    margin-left: 30px;
+    background-color: #00554E;
+    color: white;
+    border-radius: 20px;
+    border: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.new-email button:hover{
+  background-color: #00554E;
+}
+
+
+
+
+.divConocenos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 30px;
+  margin-left: 120px;
+}
+
+
+.box1{
+  width: 55%;
+  padding-left: 20px;
+}
+
+.box2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 90px;
+}
+
+.box2 h1{
+  padding-bottom: 30px;
+  color: #00554E;
+}
