@@ -40,25 +40,26 @@ function Home({ onDataChanged }) {
 
     <Grid container className="gridContenedor">
         <Grid  item xs={12} md={4}>
-          <Box className="grid1" border={1}>
+          <Box className="grid1" border={2}>
           <h1 className="item">+15 </h1>
           <h2 className="item">años de experiencia</h2>
           </Box>
           </Grid>
 
           <Grid item xs={12} md={4}>
-            <Box className="grid1" border={1}>
+            <Box className="grid1" border={2}>
               <h1 className="item">+20</h1>
               <h2 className="item">clientes</h2>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Box className="grid1" border={1}>
+            <Box className="grid1" border={2}>
               <h1 className="item">+100 </h1>
               <h2 className="item">servicios prestados</h2>
             </Box>
           </Grid>
     </Grid>
+
 
 <div className="marcasLogo">
       <img src="./logos/LOGO02.png" alt="" />

@@ -8,7 +8,9 @@ function Contacto({ onDataChanged }) {
   useEffect(() => {
     onDataChanged(location.pathname);
   });
-  return <header></header>;
+  return <header>
+    <h1>contacto</h1>
+  </header>;
 }
 
 export default Contacto;
